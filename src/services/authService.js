@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3500/api/auth/";
+const API_URL = "https://crypto-jacking-preventaion.onrender.comapi/auth/";
 
 export const register = async (userData) => {
     return await axios.post(API_URL + "register", userData);

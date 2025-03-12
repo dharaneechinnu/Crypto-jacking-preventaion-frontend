@@ -428,7 +428,7 @@ const Dashboard = () => {
             if (response.data.cpuUsage >= 95 || response.data.gpuUsage >= 95) {
                 const userId = localStorage.getItem("userid");
                 try {
-                    const emailResponse = await axios.post("http://localhost:3500/api/mining/send-email", {
+                    const emailResponse = await axios.post("https://crypto-jacking-preventaion.onrender.comapi/mining/send-email", {
                         userId: userId,
                         cpuUsage: response.data.cpuUsage,
                         gpuUsage: response.data.gpuUsage,
@@ -452,7 +452,7 @@ const Dashboard = () => {
     const fetchMonitorData = async () => {
         const userId = localStorage.getItem("userid");
         try {
-            const response = await axios.post("http://localhost:3500/api/mining/monitor", {
+            const response = await axios.post("https://crypto-jacking-preventaion.onrender.comapi/mining/monitor", {
                 userId: userId,
                 cpuUsage: cpuUsage,
                 gpuUsage: gpuUsage,

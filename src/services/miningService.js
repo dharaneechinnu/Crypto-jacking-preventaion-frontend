@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3500/api/mining/";
+const API_URL = "https://crypto-jacking-preventaion.onrender.comapi/mining/";
 
 export const fetchSystemUsage = async () => {
     return await axios.get(API_URL + "system-usage");

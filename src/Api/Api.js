@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Api = axios.create({
-  baseURL: 'http://localhost:3500/',
+  baseURL: 'https://crypto-jacking-preventaion.onrender.com',
 });
 
 export default Api;
